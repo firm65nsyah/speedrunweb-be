@@ -1,5 +1,5 @@
 Tugas Akhir: REST API Flask
-Nama: [Isi Nama Teman Anda]
+Nama: Muhammad Firmansyah Putra Susanto
 GitHub: https://github.com/firm65nsyah
 
 Yang Dikumpulkan:
@@ -8,7 +8,6 @@ https://github.com/firm65nsyah/speedrunweb-be
 
 2. Link deployment Vercel:
 https://speedrunweb-be.vercel.app
-(Atau sesuaikan dengan URL setelah klik Deploy di Vercel)
 
 3. Dokumentasi API (di README):
 https://github.com/firm65nsyah/speedrunweb-be#readme
