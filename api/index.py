@@ -1,8 +1,13 @@
 import urllib.parse
 from flask import Flask, jsonify, request
-from api.db import get_db_connection, MOCK_GAMES, MOCK_GENRES, MOCK_CATEGORIES, MOCK_ENTRIES
+
+try:
+    from api.db import get_db_connection, MOCK_GAMES, MOCK_GENRES, MOCK_CATEGORIES, MOCK_ENTRIES
+except ImportError:
+    from db import get_db_connection, MOCK_GAMES, MOCK_GENRES, MOCK_CATEGORIES, MOCK_ENTRIES
 
 app = Flask(__name__)
+app.url_map.strict_slashes = False
 
 class VercelPathMiddleware:
     """Memperbaiki routing WSGI di serverless Vercel."""
